@@ -70,7 +70,7 @@ def load_data(filename):
             row_by_row_evidence = []
             for i in range(0, len(row) - 1):
                 if i == 0 or i == 2 or i == 4 or ( i > 10 and i < 15 ):
-                    row_by_row_evidence.append(row[i])
+                    row_by_row_evidence.append(int(row[i]))
                 elif i == 10:
                     row_by_row_evidence.append(["Jan","Feb","Mar","Apr","May","June","Jul","Aug","Sep","Oct","Nov","Dec"].index(row[i]))
                 elif i == 15 and row[i] != "Returning_Visitor":
